@@ -1,0 +1,10 @@
+import csv as c
+with open('people.csv','r',newline='') as r:
+    a=c.reader(r)
+    with open('name.csv','r',newline='') as m:
+        a1=c.reader(m)
+        with open("nani.csv",'w',newline='') as w:
+            wi=c.writer(w)
+            wi.writerows(a)
+            next(a1)
+            wi.writerows(a1)
