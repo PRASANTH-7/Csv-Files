@@ -1,0 +1,16 @@
+import csv
+
+data=[['name','age','city'],['Alice','18','coimbatore'],['john','20','chennai']]
+
+with open('people.csv','w',newline="") as c:
+    writer=csv.writer(c)
+    writer.writerows(data)
+
+    #CSV File
+
+with open('people.csv','r') as c:
+    reader=csv.reader(c)
+    # for row in reader:
+    #     print(row)
+
+    print(list(reader))
