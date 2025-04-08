@@ -1,0 +1,7 @@
+#Append csv
+import csv
+l=[["dev",'10','chennai']]
+
+with open('people.csv','a') as c:
+    writer=csv.writer(c)
+    writer.writerows(l)
